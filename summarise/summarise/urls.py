@@ -19,5 +19,7 @@ from generate import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'^products/', views.products,name='products'),
+    url(r'^text/', views.text,name='text'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+{% block content %}
+<section>
+   <div class="row">
+   		<div class="twelve columns">
+   			<div class="hero-text">
+			   <h1 class="responsive-headline">Efficiently summarise your text in a fraction of time.... </h1>
+			   <p>Enter the text in the box to summarise</p>
+		   	</div>
+		</div>
+		<div class="twelve columns">
+		   	<form method="POST" action="">{% csrf_token %}
+			   	<textarea name="text" rows="20" cols="70" style="margin:0 auto;">
+	   			</textarea>
+	   			<br/>
+	   			<button type="submit" style="margin-left:425px;">Submit</button>
+   			</form>
+   			<br/>
+   			<br/>
+   		</div>
+	</div>
+</section>
+{% endblock %}
