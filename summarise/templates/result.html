@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="hero" align="middle" style="margin:50px;">
+	<h2 style = "color:white;">Summary</h2>
+	<hr> 
+	{% for d in data %}
+		<h4 style="color:white;">{{ d }}</h4>
+		<br>
+	{% endfor %}
+</section
+{% endblock %}
